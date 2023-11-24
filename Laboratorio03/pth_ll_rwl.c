@@ -13,16 +13,6 @@
  *              thread.
  * Output:   Elapsed time to carry out the ops
  *
- * Notes:
- *    1.  Repeated values are not allowed in the list
- *    2.  DEBUG compile flag used.  To get debug output compile with
- *        -DDEBUG command line flag.
- *    3.  Uses the Unix 98 Standard implementation of read-write locks.
- *    4.  The random function is not threadsafe.  So this program
- *        uses a simple linear congruential generator.
- *    5.  -DOUTPUT flag to gcc will show list before and after
- *        threads have worked on it.
- *
  * IPP:   Section 4.9.3 (pp. 187 and ff.)
  */
 #include <stdio.h>

@@ -15,11 +15,6 @@
  *
  * Usage:
  *    ./pth_sem_bar <thread_count>
- *
- * Note:
- *    Setting compile flag -DDEBUG will cause a message to be
- *    printed after completion of each barrier.
- *
  * IPP:   Section 4.8.2  (pp. 177  and ff.)
  */
 

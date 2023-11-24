@@ -15,23 +15,6 @@
  *              are deletes.
  * Output:   Elapsed time to carry out the ops
  *
- * Notes:
- *    1.  Repeated values are not allowed in the list
- *    2.  DEBUG compile flag used.  To get debug output compile with
- *        -DDEBUG command line flag.
- *    3.  Uses one mutex per node to control access to the list
- *    4.  The random function is not threadsafe.  So this program
- *        uses a simple linear congruential generator.
- *    5.  -DOUTPUT flag to gcc will show list before and after
- *        threads have worked on it.
- *    6.  Only Insert, Member and Delete use locks:  Print and Free_List
- *        should *not* be called when multiple threads are
- *        accessing the list.
- *    7.  Steffen Christgau and Bettina Schnor pointed out some errors
- *        in the implementations of the list traversals.  These were
- *        corrected on Feb 22, 2017.
- *
- * IPP:   Section 4.9.2 (pp. 186 and ff.)
  */
 #include <stdio.h>
 #include <stdlib.h>

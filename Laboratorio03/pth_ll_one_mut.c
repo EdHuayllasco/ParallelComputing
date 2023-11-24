@@ -16,16 +16,6 @@
  *              are deletes.
  * Output:   Elapsed time to carry out the ops
  *
- * Notes:
- *    1.  Repeated values are not allowed in the list
- *    2.  DEBUG compile flag used.  To get debug output compile with
- *        -DDEBUG command line flag.
- *    3.  Uses one mutex to control access to the list
- *    4.  The random function is not threadsafe.  So this program
- *        uses a simple linear congruential generator.
- *    5.  -DOUTPUT flag to gcc will show list before and after
- *        threads have worked on it.
- *
  * IPP:   Section 4.9.2 (pp. 185 and ff.)
  */
 #include <stdio.h>

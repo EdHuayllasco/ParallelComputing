@@ -16,10 +16,6 @@
  * Output:
  *    Time for BARRIER_COUNT barriers
  *
- * Note:    
- *    Verbose output can be enabled with the compile flag -DDEBUG
- *
- * IPP:   Section 4.8.3 (pp. 179 and ff.)
  */
 
 #include <stdio.h>
